@@ -3,10 +3,7 @@
    <head>
       <meta charset='utf-8'>
       <title>МедХимТех</title>
-      <link data-turbolinks-track="true" href="/assets/application-0c8ef357976f66b4b9e824ea9c926d2f.css" media="all" rel="stylesheet" />
-      <script data-turbolinks-track="true" src="/assets/application-f558a53072d1e3ff80b2eeaa050c67fc.js"></script>
-      <meta content="authenticity_token" name="csrf-param" />
-<meta content="7ZDbWCstrFYDuv5PDJ3CCZe95MtYdVXsnTQ73za+KDE=" name="csrf-token" />
+      <link data-turbolinks-track="true" href="/assets/application-848d0bbee4a96925c2043fa025b2fca3.css" media="all" rel="stylesheet" />
    </head>
 
    <body>
@@ -49,26 +46,35 @@
          </div>
          <div class="content">
             <div class="caption">Контакты</div>
+<table class="contacts">
+   <tr>
+      <td style="width: 33%">
+         <div class="icon-phone"></div>
+         Позвонить</br>
+         8 (4852) 44-92-42<br/>
+         8 (4852) 44-94-23
+      </td>
+      <td style="width: 34%"></td>
+      <td style="width: 33%">
+         <div class="icon-mail"></div>
+         Написать</br>
+         medht@mail.ru
+      </td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>
+         <div class="icon-print"></div>
+         Отправить факс</br>
+         8 (4852) 44-92-42<br/>
+         8 (4852) 44-94-23
+      </td>
+      <td></td>
+   </tr>
+</table>
 <div style="text-align: center;"><a id="mapCaption" href="http://maps.yandex.ru/?um=&ll=39.867396%2C57.592172&spn=0.020170%2C0.009264&z=16&l=map" style="text-decoration: none; font-family: 'PtSans';" target="_blank">Как до нас добраться?</a></div>
-<div id="map" style="width: 600px; height: 400px; margin: auto;"></div>
-<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
-<script type="text/javascript">
-   ymaps.ready(function () {
-      myMap = new ymaps.Map("map", {
-         center: [57.5942, 39.8633],
-         zoom: 15
-      });
-      
-      myMap.controls.add('zoomControl');
-
-      myPlacemark = new ymaps.Placemark([57.5942, 39.8633], { 
-         hintContent: 'OOO "МедХимТех"', 
-         balloonContent: 'г. Ярославль, Силикатное шоссе, 19, оф.107 (правый вход)' 
-      });
-
-      myMap.geoObjects.add(myPlacemark);
-   });
-</script>
+<div id="map" onClick="map.activate();"></div>
+<script src="/assets/contacts-94ff5b400fcfdf820fadbbcd4f9090d6.js"></script>
 
          </div>
       </div>
